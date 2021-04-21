@@ -19,7 +19,7 @@ namespace VendingMachine
             Console.WriteLine("1.Cola, 13 Kr.                  2.Fun juice, 20 kr.\n" +
                              "3.Water, 25 Kr                   4.Banana, 5 Kr.\n" +
                              "5.Cheese Sandwitch, 55 Kr.       6.Pan pizza, 50 kr.\n" +
-                             "7.Chips, 21 Kr.                  8.Twix, 20 Kr.\n" +
+                             "7.Chips, 21 Kr.                  8.Twix, 10 Kr.\n" +
                              "9.PopCorn, 35 Kr.\n");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -141,7 +141,7 @@ namespace VendingMachine
             while (selc < 15 && keep)
             {
                 //Condition for checking if there is amount in the balance or not before to start the loop for buying.
-                if (Balance == 0)
+                if (Moneypool == 0)
                 {
                     Money.GetBalance(Balance);
                     
