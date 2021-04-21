@@ -1,0 +1,28 @@
+﻿
+
+if (Balance == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Sorry! your balance is 0 ! you can't proceed\n" +
+                        "Try to add amount to continue buying!");
+                    
+                    Console.ResetColor();
+                    
+                }
+=============================
+  if (Balance <= 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Sorry your balance is 0 !");
+                    Console.ResetColor();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Your change is : {0} kr.", Math.Abs(Change));
+                    Console.ResetColor();
+                    Console.WriteLine("Thanks for using bot vending machine!!.\n" +
+                     "Good Bye!!!");
+
+
+
+                    keep = false;
+                }
+===============================
